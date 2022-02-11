@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0px 0px 32px;
+}
+
+/* 홈 UI 왼쪽 부분 */
+
+.wrapper__left{
+    width: 208px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 3px;
+}
+.wrapper__left__header{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.today{
+    font-size: 9px;
+    color: #55B2D4;
+    padding-top: 10px;
+}
+
+.zero{
+    color: red;
+    font-size: 11px;
+}
+
+.count{
+    font-size: 11px;
+}
+
+
+/* 왼쪽 프로필 부분 */
+
+.wrapper__left__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 30px 0px 30px;
+    border-radius: 15px;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.left__body__header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.left__body__header__gray{
+    width: 148px;
+    height: 133px;
+    background-color: gray;
+
+}
+
+.left__body__header__line{
+    border-top: 1px dotted black;
+    margin: 12px 0px;
+}
+
+.left__body__profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.profile__detail{
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.fas {
+    display: flex;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+    
+}
+
+.far {
+    color: black;
+    margin-right: 10px;
+    width: 5px;
+    height: 5px;
+}
+
+.left__body__footer{
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+.body__footer__select{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.body__footer__feel{
+    font-size: 11px;
+    margin-bottom: 5px;
+    color: gray;
+}
+
+
+ /* 홈 UI 오른쪽 부분 */
+
+.wrapper__right{
+    width: 524px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding-left: 5px;
+}
+
+.wrapper__right__header{
+    display: flex;
+    flex-direction: row;
+    width: 510px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 8px 0px 14px;
+}
+
+.right__header__title, .right__header__setting, .arrow{
+    color: #55b2e4;
+}
+
+
+.right__header__setting{
+    font-size: 9px;
+}
+
+
+.wrapper__right__body{
+    width: 510px;
+    height: 445px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* //네비게이션 부분 */
+
+.navigation {
+    width: 66px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    left: 784px;
+    justify-content: space-between;
+
+}
+
+.navigation__item{
+    width: 60px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #298eb5;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
