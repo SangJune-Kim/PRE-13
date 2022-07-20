@@ -10,26 +10,26 @@
         <div class="outerbox">
             <div> 
                 <h2 class="headtext">코드캠프 회원가입</h2><br>
-                <input class="email" type="text" placeholder="이메일을 입력해 주세요."><br /><br />
-                <input class="name" type="text" placeholder="이름을 입력해 주세요." ><br /><br />
-                <input class="pw" type="password"  placeholder="비밀번호를 입력해 주세요."><br /><br />
-                <input class="pw" type="password"  placeholder="비밀번호를 다시 입력해 주세요."><br /><br />
+                <input id="email" class="email" type="text" placeholder="이메일을 입력해 주세요." oninput="checkValidation()"><br /><br />
+                <input id="name" class="name" type="text" placeholder="이름을 입력해 주세요."  oninput="checkValidation()"><br /><br />
+                <input id="password1" class="pw" type="password"  placeholder="비밀번호를 입력해 주세요." oninput="checkValidation()"><br /><br />
+                <input id="password2" class="pw" type="password"  placeholder="비밀번호를 다시 입력해 주세요." oninput="checkValidation()"><br /><br />
                 
                 <div class="outerbox__phone">
-                <input class="phonebox" id="phone1" type="text" oninput="changeFocus1()" maxlength="3"> -
-                <input class="phonebox" id="phone2" type="text" oninput="changeFocus2()" maxlength="4"> - 
-                <input class="phonebox" id="phone3" type="text" maxlength="4"> 
+                <input class="phonebox" id="phone1" type="text" oninput="changeFocus1()" maxlength="3" oninput="checkPhonenumber()"> -
+                <input class="phonebox" id="phone2" type="text" oninput="changeFocus2()" maxlength="4" oninput="checkPhonenumber()"> - 
+                <input class="phonebox" id="phone3" type="text" maxlength="4" oninput="checkPhonenumber()"> 
                 </div><br>
                 <div class="outerbox__auth">
                     <!-- 인증번호부분 -->
                         <div class="auth">
                             <div id="authNumber"></div>
-                            <button class="authBotton" onclick="pressedBtn()">인증번호 전송</button>
+                            <button class="authButton" id="authButton" onclick="pressedBtn()" disabled="true">인증번호 전송</button>
                         </div>
                         <br>
                         <div class="timer">
-                            <div id="timer"></div>
-                            <button class="authBotton"id="completeBtn">인증완료</button>
+                            <div id="time"></div>
+                            <button class="authButton"id="completeBtn" disabled="true" onclick="completeBtn()">인증완료</button>
                         </div><br>
                     
                 </div>
@@ -44,7 +44,7 @@
                 <br>
                 <div class="radio">
                     <div class="female">
-                        <input type="radio" name="gender"> 여성
+                        <input type="radio" name="gender" > 여성
                     </div>
                     <div class="male">
                         <input type="radio" name="gender"> 남성
@@ -52,7 +52,7 @@
                 </div>
                 <br>
                 <hr class="line">
-                <button class="signupbox">가입하기</button>
+                <button class="signupbox" id="submit" disabled="true">가입하기</button>
             </div>
         </div>
     </div>
